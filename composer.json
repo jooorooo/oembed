@@ -1,18 +1,14 @@
 {
-  "name": "pingpong/oembed",
+  "name": "simexis/oembed",
   "description": "Laravel 5 - Retrieve page info using oembed, opengraph, etc.",
   "keywords": [
     "laravel",
-    "pingpong",
+    "simexis",
     "oembed",
     "laravel-oembed"
   ],
   "license": "BSD-3-Clause",
   "authors": [
-    {
-      "name": "Pingpong Labs",
-      "email": "pingpong.labs@gmail.com"
-    },
 	{
       "name": "Georgi Nachev",
       "email": "jooorooo@gmail.com"
@@ -30,7 +26,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Pingpong\\Oembed\\": ""
+      "Simexis\\Oembed\\": ""
     }
   },
   "minimum-stability": "stable"
