@@ -20,10 +20,6 @@
     "illuminate/cache": "5.1.*",
     "simexis/embed": "1.*"
   },
-  "require-dev": {
-    "phpunit/phpunit": "4.1.*",
-    "mockery/mockery": "0.9.*"
-  },
   "autoload": {
     "psr-4": {
       "Simexis\\Oembed\\": ""
