@@ -1,6 +1,6 @@
 {
   "name": "pingpong/oembed",
-  "description": "Laravel 4 - Retrieve page info using oembed, opengraph, etc.",
+  "description": "Laravel 5 - Retrieve page info using oembed, opengraph, etc.",
   "keywords": [
     "laravel",
     "pingpong",
@@ -12,12 +12,16 @@
     {
       "name": "Pingpong Labs",
       "email": "pingpong.labs@gmail.com"
+    },
+	{
+      "name": "Georgi Nachev",
+      "email": "jooorooo@gmail.com"
     }
   ],
   "require": {
     "php": ">=5.4.0",
-    "illuminate/support": "4.2.*",
-    "illuminate/cache": "4.2.*",
+    "illuminate/support": "5.*",
+    "illuminate/cache": "5.*",
     "embed/embed": "~1"
   },
   "require-dev": {
