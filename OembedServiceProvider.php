@@ -21,7 +21,7 @@ class OembedServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('simexis/oembed');
+		//$this->package('simexis/oembed');
 	}
 
 	/**
@@ -33,7 +33,7 @@ class OembedServiceProvider extends ServiceProvider {
 	{
 		$this->app->bindShared('oembed', function ($app)
 		{
-			return new Oembed(new Embed, $app['cache.store']);
+			return new Oembed(new Embed, $app['cache']);
 		});
 	}
 

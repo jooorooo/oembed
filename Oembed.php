@@ -1,6 +1,6 @@
 <?php namespace Simexis\Oembed;
 
-use Illuminate\Cache\Repository;
+use Illuminate\Cache\CacheManager;
 
 /**
  * Class Oembed
@@ -17,7 +17,7 @@ class Oembed {
     /**
      * The Cache Repository.
      *
-     * @var Repository
+     * @var CacheManager
      */
     protected  $cache;
 
@@ -26,7 +26,7 @@ class Oembed {
 	 * 
 	 * @param Embed $embed
 	 */
-	public function __construct(Embed $embed, Repository $cache)
+	public function __construct(Embed $embed, CacheManager $cache)
 	{
 		$this->embed = $embed;
         $this->cache = $cache;
@@ -39,8 +39,10 @@ class Oembed {
 	 * @param  null|array   $options
 	 * @return false|\Embed\Adapters\AdapterInterface
 	 */
-	public function get($url, array $options = null)
+	public function get($url, array $options = [])
 	{
+        if(is_array($options))
+            $options = [];
         return $this->embed->get($url, $options);
     }
 

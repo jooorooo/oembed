@@ -14,8 +14,10 @@ class Embed extends BaseEmbed {
      * @param  array            $options
      * @return \Embed\Adapters\AdapterInterface|false
      */
-    public function get($url, array $options = null)
+    public function get($url, array $options = [])
     {
+        if(is_array($options))
+            $options = [];
         return static::create($url, $options);
     }
 

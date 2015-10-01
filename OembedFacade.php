@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * Class Oembed
  */
-class Oembed extends Facade {
+class OembedFacade extends Facade {
 
     /**
      * Get the registered name of the component.

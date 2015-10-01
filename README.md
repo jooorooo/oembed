@@ -26,7 +26,7 @@ After the composer updated. Add new service provider in app/config/app.php.
 Next, Add new alias.
 
 ```php
-    'Oembed'           => 'Simexis\Oembed\Facades\Oembed',
+    'Oembed'           => 'Simexis\Oembed\OembedFacade',
 ```
 
 Done.
