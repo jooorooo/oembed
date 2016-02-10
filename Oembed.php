@@ -1,6 +1,6 @@
 <?php namespace Simexis\Oembed;
 
-use Illuminate\Contracts\Cache\Factory AS CacheFactory
+use Illuminate\Contracts\Cache\Factory AS CacheFactory;
 
 /**
  * Class Oembed
