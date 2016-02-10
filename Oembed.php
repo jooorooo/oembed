@@ -1,6 +1,6 @@
 <?php namespace Simexis\Oembed;
 
-use Illuminate\Cache\CacheManager;
+use Illuminate\Contracts\Cache\Factory AS CacheFactory
 
 /**
  * Class Oembed
@@ -17,7 +17,7 @@ class Oembed {
     /**
      * The Cache Repository.
      *
-     * @var CacheManager
+     * @var CacheFactory
      */
     protected  $cache;
 
@@ -26,7 +26,7 @@ class Oembed {
 	 * 
 	 * @param Embed $embed
 	 */
-	public function __construct(Embed $embed, CacheManager $cache)
+	public function __construct(Embed $embed, CacheFactory $cache)
 	{
 		$this->embed = $embed;
         $this->cache = $cache;
