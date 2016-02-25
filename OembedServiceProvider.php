@@ -31,7 +31,7 @@ class OembedServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app->bindShared('oembed', function ($app)
+		$this->app->singleton('oembed', function ($app)
 		{
 			return new Oembed(new Embed, $app['cache']);
 		});
