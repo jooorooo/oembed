@@ -20,7 +20,7 @@ Next, open a terminal and run.
 After the composer updated. Add new service provider in app/config/app.php.
 
 ```php
-    'Simexis\Oembed\OembedServiceProvider::class'
+    Simexis\Oembed\OembedServiceProvider::class
 ```
 
 Next, Add new alias.
