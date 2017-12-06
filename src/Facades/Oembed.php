@@ -1,11 +1,11 @@
-<?php namespace Simexis\Oembed;
+<?php namespace Simexis\Oembed\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class Oembed
  */
-class OembedFacade extends Facade {
+class Oembed extends Facade {
 
     /**
      * Get the registered name of the component.

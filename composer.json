@@ -15,15 +15,25 @@
     }
   ],
   "require": {
-    "php": ">=5.4.0",
-    "illuminate/support": "5.2.*",
-    "illuminate/cache": "5.2.*",
+    "php": ">=5.6",
+    "illuminate/support": "^5.0",
+    "illuminate/cache": "^5.0",
     "simexis/embed": "1.*"
   },
   "autoload": {
     "psr-4": {
-      "Simexis\\Oembed\\": ""
+      "Simexis\\Oembed\\": "src"
     }
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "stable",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Simexis\\Oembed\\OembedServiceProvider"
+      ],
+      "aliases": {
+        "Cart": "Simexis\\Oembed\\Facades\\Oembed"
+      }
+    }
+  }
 }

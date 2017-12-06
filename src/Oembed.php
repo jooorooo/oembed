@@ -32,17 +32,19 @@ class Oembed {
         $this->cache = $cache;
     }
 
-	/**
-	 * Get info from a specify url.
-	 * 
-	 * @param  string 		$url
-	 * @param  null|array   $options
-	 * @return false|\Embed\Adapters\AdapterInterface
-	 */
-	public function get($url, array $options = [])
+    /**
+     * Get info from a specify url.
+     *
+     * @param $url
+     * @param array $options
+     * @return \Embed\Adapters\AdapterInterface
+     * @throws \Embed\Exceptions\InvalidUrlException
+     */
+    public function get($url, array $options = [])
 	{
-        if(is_array($options))
+        if(!is_array($options)) {
             $options = [];
+        }
         return $this->embed->get($url, $options);
     }
 
