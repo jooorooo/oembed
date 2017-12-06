@@ -32,7 +32,7 @@
         "Simexis\\Oembed\\OembedServiceProvider"
       ],
       "aliases": {
-        "Cart": "Simexis\\Oembed\\Facades\\Oembed"
+        "Oembed": "Simexis\\Oembed\\Facades\\Oembed"
       }
     }
   }
