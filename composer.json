@@ -26,6 +26,12 @@
     }
   },
   "minimum-stability": "stable",
+  "repositories": {
+     "simexis/embed": {
+       "type": "git",
+       "url": "https://github.com/regional-facilities-auckland/embed.git"
+     }
+  },
   "extra": {
     "laravel": {
       "providers": [
